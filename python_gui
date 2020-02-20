@@ -1,8 +1,8 @@
 """
 Graafinen käyttöliittymä, skaalautuva
 TIE-02100 Johdatus ohjelmointiin
-Aleksi Raatala, 274265
-Mauri Leino, 274411
+Aleksi Raatala
+Mauri Leino
 
 Hirsipuu-tyyppinen peli kahdelle pelaajalle
 Säännöt:
