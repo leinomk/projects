@@ -1,2 +1,2 @@
 # projects
-Different projects, school related and not
+programming projects
