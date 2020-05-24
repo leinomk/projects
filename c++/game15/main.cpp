@@ -22,6 +22,7 @@
 #include <vector>
 #include <string>
 #include <cctype>
+#include <time.h>
 
 const std::string DIRECTIONS = "awsd";
 
@@ -185,7 +186,6 @@ bool read_command_successfully(std::string& command, unsigned int& piece,
                 std::cout << "Invalid number: " << piece << std::endl;
             }
         }
-
         gameboard.print();
     }
 }
