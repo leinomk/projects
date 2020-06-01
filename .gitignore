@@ -33,3 +33,5 @@
 
 # Own additions
 *.pro.user
+
+*.DS_Store
