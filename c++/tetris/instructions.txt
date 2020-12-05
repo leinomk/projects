@@ -1,0 +1,62 @@
+TIE-02201 Ohjelmointi 2
+Mauri Leino, mauri.leino@tuni.fi
+Tetris
+
+This is a Tetris-style game for one player. The rules of the game and most of
+program behaviour are described in this document.
+
+When the program opens, two buttons are enabled: Quit, and Start Game. Whenever
+user clicks the Quit button or presses Q on their keyboard, the program closes.
+
+By pressing Start Game, the user can start playing the game. In the top left
+corner is a timer from which the user can read how long they have been playing
+the current game. First dial shows minutes, and the second one shows seconds.
+Timer starts when Start Game is clicked and the first tetromino will start
+dropping from the top of the screen. Under the timer there are dials for
+points, lines showing number of cleared lines, and difficulty level.
+
+When the game starts, buttons controlling movement of tetrominos are enabled,
+and the Start Game -button will read Pause Game. For each type of tetromino the
+generation point is fixed, and it is about in the middle of the playing area.
+In the source code, namespace Tetromino represents a vector containing pointers
+to the graphic objects the tetromino contains. At a time there is one Tetromino-
+type object, a shared pointer currentTetromino_, which points to the tetromino
+currently in play.
+
+Tetrominos can be moved left and right on the screen using buttons, and from
+Bring Down -button they can be dropped all the way at once. Player can also
+control tetrominos using A, S and D keys, for moving the tetromino left, down
+and right, respectively. Tetromino can be rotated 90 degrees clockwise using the
+Rotate button or by pressing the W key. Rotation axis is fixed, and required
+spaces need to be free, i. e. tetromino is not moved away from walls
+automatically, for example.
+
+The dropping rate of tetrominos increases over progression, starting at one step
+per second. Every ten cleared lines the difficulty level will increase, taking
+away .1 seconds per step. Maximum difficulty is level 9, in which tetromino drops
+one step every .2 seconds. For this purpose there are two timers in the program.
+One is for tracking time used, and the other controls the dropping of tetrominos.
+When tetromino hits bottom or previously placed tetrominos, a new tetromino is
+generated automatically. Player has until the current time step is over to move
+the tetromino horizontally. This allows sliding tetrominos under previous tetrominos.
+From Pause Game player can pause the game, and movement controls are disabled
+until game is continued from Continue.
+
+After tetromino stops pointers to blocks it contains are stored in a 2D vector
+squares_ so that each sub-vector contains the blocks that are on the same height,
+or on the same row. These vectors representing rows are used when checking if
+tetromino is as low as it can go, if there are full rows to be removed and after
+removing full rows if some rows can be moved lower.
+
+The game will end when generated tetromino initially overlaps previous tetromino
+before moving. In the case of game over, all other buttons are disabled except
+for the Reset button which will read New Game, which resets time and points to
+zero, and clears the playing area, same as clicking Reset at any point during
+game. Until that, time, points and playing area remain for the player to admire.
+The player is also infromed about the number of Tetris' they achieve, Tetris
+being removal of four lines at once.
+
+Player receives 2 points for every row the tetromino is dropped when Bring Down
+button or S key is clicked. Full rows are removed and rows above them are moved
+lower accordingly. Each row removed awards player with 50 points. Doing a Tetris
+gives no extra points.
