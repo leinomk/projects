@@ -33,4 +33,5 @@
 
 # Own additions
 *.pro.user
-*/build-*
+
+*.DS_Store
