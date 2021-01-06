@@ -33,3 +33,4 @@
 
 # Own additions
 *.pro.user
+*/build-*
