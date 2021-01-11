@@ -1,0 +1,196 @@
+commit 0fe0b83a7849a41a8df8abe3675ed6e44bb3f400 (HEAD -> master, origin/master, origin/HEAD)
+Merge: 517b233 89323f0
+Author: jokine23 <eetu.jokinen@tuni.fi>
+Date:   Mon Nov 30 22:07:41 2020 +0200
+
+    add pipeline
+
+commit 517b233129bb3dbedb1491ed95689c4854b2d9d7 (origin/dev_Eetu, dev_Eetu)
+Author: jokine23 <eetu.jokinen@tuni.fi>
+Date:   Mon Nov 30 21:50:10 2020 +0200
+
+    Fixes to pipeline
+
+commit 83d2b5f8b654af757b8d45bf9a3c08914c20833d
+Author: jokine23 <eetu.jokinen@tuni.fi>
+Date:   Mon Nov 30 21:45:16 2020 +0200
+
+    Added pipeline
+
+commit 2f959d57314903d2f9fcd303cc8f939daca08714
+Author: jokine23 <eetu.jokinen@tuni.fi>
+Date:   Mon Nov 30 21:08:09 2020 +0200
+
+    Unit test added for statistics-class.
+
+commit 89323f08ba60222df3d48ae0cc99b0554797966b
+Merge: aba0527 1277cd3
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Mon Nov 30 17:00:13 2020 +0200
+
+    comments and clarifications
+
+commit aba05273944a8bf36be76de64e8c196420be0449
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Mon Nov 30 15:24:33 2020 +0200
+
+    something new
+
+commit 1277cd310050902732a166af2eaeb5e5c38f0c29
+Author: jokine23 <eetu.jokinen@tuni.fi>
+Date:   Sun Nov 29 23:34:15 2020 +0200
+
+    Music added
+
+commit 04c1285c1f11218db3231a8fed9911e56628978c
+Author: jokine23 <eetu.jokinen@tuni.fi>
+Date:   Sun Nov 29 22:45:16 2020 +0200
+
+    Added bonusItem actor
+
+commit f7469e64266e83b8003ec27f8ec1d4ab99b379aa
+Author: jokine23 <eetu.jokinen@tuni.fi>
+Date:   Sun Nov 29 20:06:44 2020 +0200
+
+    Statistics-class is functioning properly.
+
+commit 6f6fa5fcf81b02e241d6a1e9d7915af8fcc39de4 (origin/dev_mauri)
+Merge: 39d134f dec0af3
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Sun Nov 29 14:29:16 2020 +0200
+
+    Merge branch 'dev2' into dev_mauri
+
+commit dec0af3dc0ae0d8cf609af58757829b2adfeb067
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Sun Nov 29 14:28:54 2020 +0200
+
+    implemented start dialog to ask game difficulty
+
+commit 39d134f25ad822ecb647a84e4cc42e4c863677d6
+Merge: 3aedf6c 566a779
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Sat Nov 28 20:38:51 2020 +0200
+
+    Merge new functionalities from test branch
+
+commit 566a779b46bb34dcc7af660a19394e5bd2ab69ec
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Sat Nov 28 20:38:26 2020 +0200
+
+    implemented ending round
+
+commit 3aedf6cb86406db7399ab8565f7966ceaf9cc602
+Merge: b038ee4 924216a
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Sat Nov 28 19:55:14 2020 +0200
+
+    Merge branch 'dev2' into dev_mauri
+
+commit 924216a86236553cf818e13b1b5e20d4497c6192
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Sat Nov 28 19:54:58 2020 +0200
+
+    stop game when round is over
+
+commit b038ee4613ab527b72f7678a7ef5b02476ad5078
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Sat Nov 28 19:39:22 2020 +0200
+
+    removed autosave file
+
+commit ae83b7b2019e40476a063388700c89908e2cad69
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Sat Nov 28 19:37:31 2020 +0200
+
+    implemented removing buses and passengers as bombs are dropped
+
+commit de55d51c6cb8f82732e0c8ef69fb10d2b5f7d7a5
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Fri Nov 27 16:41:11 2020 +0200
+
+    improved graphics for buses and bus stops
+
+commit 076b0d84d7839e707228e9ecb8b2168511c08620
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Fri Nov 27 13:53:01 2020 +0200
+
+    added dropping a bomb when pressing space
+
+commit 10080a2db56f5688feeba386479ef869d4d075b9
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Fri Nov 27 12:35:15 2020 +0200
+
+    automatic movement of the player character
+
+commit 17bca08c7c62087b9b4ef10ebd54027df8500000
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Thu Nov 26 18:20:00 2020 +0200
+
+    added base for a bomb graphics item
+
+commit 3d5c0437f2efd3cc1ade665582d03ddbf30e3145
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Thu Nov 26 15:24:09 2020 +0200
+
+    implemented basics for player object
+
+commit 4d0cd347c7181c8cbf391103ddd018a99b2a2c58
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Thu Nov 26 12:54:59 2020 +0200
+
+    create class for playeritem
+
+commit f6f4976bb0653b15bfc2177ea4c723382acf1ec6
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Thu Nov 26 09:37:06 2020 +0200
+
+    do not draw passengers, as they only exist on stops or in buses
+
+commit 6d388a259354f95fc69608246d019696d454f8a1
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Wed Nov 25 13:58:05 2020 +0200
+
+    changes to Course submodule
+
+commit f600041ae43248791d2cc76b3a80cb1edd23cbdd
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Wed Nov 25 13:39:20 2020 +0200
+
+    added base for better mainwindow
+
+commit 7a4550c5063000455764f44fdf30c53f3b7047ce
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Wed Nov 25 10:03:04 2020 +0200
+
+    added start dialog, modified City-class to draw the background map
+
+commit 19d63e89c14e2b830ac1563cf14f0d2507b24e44
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Thu Nov 19 18:27:33 2020 +0200
+
+    implemented some starting functionality
+
+commit 1298533bb1cb98474175b9fd708ce34f05b04c1b
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Thu Nov 19 13:08:28 2020 +0200
+
+    added new branch for development, added header for City class
+
+commit 7ba55bc0b810da7b24fc7dc8226ff03f122a1b0f
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Thu Nov 12 10:37:26 2020 +0200
+
+    generated doxygen documentation for Course side
+
+commit 81354e1e647cbe90e7227ae101365a8495d5b58f
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Wed Nov 11 13:42:07 2020 +0200
+
+    changes to Course lib
+
+commit 9134a963454a04f1c3c58d850c3d2c923f926e1f
+Author: Mauri Leino <mauri.leino@tuni.fi>
+Date:   Wed Nov 11 12:54:53 2020 +0200
+
+    added .gitignore, ignored .pro.user-files

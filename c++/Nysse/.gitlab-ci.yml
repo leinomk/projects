@@ -1,0 +1,69 @@
+# This GitLab CI configuration is used for the weekly exercies of
+# the course Ohjelmointi 3/Programming 3
+
+# For more information refer to: https://course-gitlab.tuni.fi/help/ci/README.md
+
+# We use an image based on Alpine Linux that contains
+# Qt 5.14.2 and the necessary stuff
+
+image: honksu/new-qt:5142
+
+# The stages of our current pipeline
+stages:
+  - build
+  - test
+
+# Build job to see that the Nysse project is created and the project is ready for submission.
+build_mauri-ja-eetu:
+  stage: build
+  tags:
+    - qt
+  script: 
+    #- cd mauri-ja-eetu
+    - qmake
+    - make
+    - make clean
+  allow_failure: true
+
+# Build job for Nysse's unit test 
+UnitTest:
+  # The runner must be able to run and compile Qt projects
+  tags:
+    - qt
+  # Build jobs naturally go to the build stage
+  # We could also have multi-stage builds if needed
+  stage: build
+  # The command line commands we want the CI environment to execute
+  # When the script section starts, the working directory is the repository's root
+  script: 
+    # Go to the correct directory
+    - cd UnitTest
+    # Run qmake to produce the makefile
+    - qmake
+    # Compile the project using the generated Makefile
+    - make
+    # Clean up the build
+    - make clean
+  # In a distributed CI system we need a way to pass the generated binary between jobs.
+  # GitLab CI provides artifacts to achieve this.
+  artifacts:
+    # Paths to the artifacts we want to pass
+    paths:
+      - UnitTest/teststatistics
+    # How long we store the artifacts in GitLab
+    expire_in: 2d
+
+# Test job for UnitTest for statistics-class
+statisticstest:
+  tags:
+    - qt
+  stage: test
+  script:
+    # Go to the correct directory
+    - cd UnitTest
+    # Run the test binary
+    - ./teststatistics
+  # On what jobs this dependes on, which artifacts we download for this job
+  dependencies:
+    - UnitTest
+
